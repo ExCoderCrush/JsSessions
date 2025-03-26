@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digtal StopWatch</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       .container{
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       }
+       h1{
+        margin: 20px;
+       }
+       p{
+        margin: 10px;
+        font-size: large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       }
+       button{
+        margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+       }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⏱ Digital Stopwatch</h1>
+    <p><span id="min">00</span>:<span id="sec">00</span> Sec</p>
+    <button onclick="start()" style=" border-radius: 5px; border: none; color: white; background-color: rgb(48, 216, 14);" class="button ">Start</button>
+    <button class="button " onclick="pause()" style=" border-radius: 5px; border: none; color: white; background-color: rgb(235, 235, 41)">Pause</button>
+    <button class="button " onclick="stop()" style=" border-radius: 5px; border: none; color: white; background-color: red">Reset</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
